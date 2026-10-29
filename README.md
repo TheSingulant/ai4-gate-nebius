@@ -2,13 +2,13 @@
 
 Approve the exact action, or it does not run.
 
-This is a prototype for the Nebius x NVIDIA Global AI Hackathon, Coding and Agentic Engineering track. A coding agent proposes tool calls. An authorization gate checks each call before anything runs. Safe calls run inside a disposable sandbox. Risky calls wait for a person. Every decision produces an Ed25519 signed receipt that a separate program can check offline.
+This is a prototype for the Nebius x NVIDIA Global AI Hackathon, Coding and Agentic Engineering track. A coding agent proposes tool calls. An authorization gate checks each call before anything runs. Safe calls run inside a disposable sandbox. Risky calls wait for a person. Every execution-time decision, allowed or refused, and every outright policy denial at proposal time produces an Ed25519 signed receipt that a separate program can check offline. A pending proposal that never executes and is not denied by policy does not generate a receipt.
 
 Owner: The Singulant L.L.C-FZ.
 
 License: Apache-2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-This directory is self-contained. It does not import a private package. This tree is the proposed public repository contents for `ai4-gate-nebius`.
+This directory is self-contained. It does not import a private package. Public repository: https://github.com/TheSingulant/ai4-gate-nebius
 
 ## Quick start (offline, no API key)
 

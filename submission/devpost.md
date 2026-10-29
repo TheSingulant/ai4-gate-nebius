@@ -1,8 +1,8 @@
 # Devpost final copy: AI⁴ Gate, Nebius x NVIDIA Global AI Hackathon
 
-Status: FOR REVIEW. Not submitted. No Devpost account action has been taken.
+Status: reference copy of the Devpost text. The live submission status is tracked on Devpost, not in this file.
 Prepared Thursday, October 29, 2026 (PT). Brand: The Singulant. Facts: sole founder, prototype, 0 users, $0 revenue.
-Fields marked PENDING are filled only after the owner gives final authorization. Judge credentials are never committed.
+Fields marked PENDING are filled only after the resource is verified. Judge credentials are never committed.
 
 Core message: Capability is not permission. Every action leaves proof.
 
@@ -12,13 +12,13 @@ Core message: Capability is not permission. Every action leaves proof.
 
 AI⁴ Gate: Permission Before Action
 
-## Submission tagline (128 of 140 characters)
+## Submission tagline (124 of 140 characters)
 
-Nemotron proposes the tool call. A person approves the exact action, or it does not run. Every decision leaves a signed receipt.
+Nemotron proposes the tool call. A person approves the exact action, or it does not run. Every execution decision is signed.
 
 ## Elevator pitch, long form (184 of 200 characters, use only if a longer field exists)
 
-A Nemotron coding agent on Nebius Token Factory where every risky tool call needs approval of the exact action. Change one byte and it is refused. Every decision gets a signed receipt.
+A Nemotron coding agent on Nebius Token Factory where every risky tool call needs approval of the exact action. Change one byte and it is refused. Every execution decision gets a signed receipt.
 
 ## Track
 
@@ -42,7 +42,7 @@ AI⁴ Gate puts an authorization gate between an NVIDIA Nemotron coding agent an
 - Risky calls, such as writing or running a new script or pushing to main, wait for a person.
 - Some calls are refused outright, such as pushing to any remote other than origin/main or messaging anyone outside team@example.test.
 
-An approval is bound to a SHA-256 hash of the exact action (tool, every argument, target) and an expiry, and it works once. Change one byte between approval and execution and the gate refuses. Every decision, allowed or refused, produces an Ed25519 signed receipt that names the planner and the model id. A separately written verifier checks receipts offline without importing the gate.
+An approval is bound to a SHA-256 hash of the exact action (tool, every argument, target) and an expiry, and it works once. Change one byte between approval and execution and the gate refuses. Every execution-time decision, allowed or refused, and every outright policy denial at proposal time produces an Ed25519 signed receipt that names the planner and the model id. A pending proposal that never executes and is not denied by policy does not generate a receipt. A separately written verifier checks receipts offline without importing the gate.
 
 ### What the demo shows (all live Nemotron runs on October 28, 2026)
 
@@ -69,7 +69,7 @@ As agents take real actions, the question shifts from "can the model do this?" t
 
 ### Security guarantees and limitations
 
-Guarantees in this prototype: an unapproved action does not run; a changed action does not run; an approval runs at most once; each decision has a signed receipt; the model key is not returned to the browser; code runs only in the session sandbox; git remotes and messages do not leave the machine.
+Guarantees in this prototype: an unapproved action does not run; a changed action does not run; an approval runs at most once; each execution-time decision and each policy denial has a signed receipt; the model key is not returned to the browser; code runs only in the session sandbox; git remotes and messages do not leave the machine.
 
 Limitations: the demo approver key lives in the gate process; there is no trusted time source; the sandbox is a limited local process, not a VM; a receipt proves integrity and signer identity, not that the tool succeeded. The reference authorizer in this repository is not a production service.
 
@@ -103,9 +103,9 @@ Measured on October 28, 2026. Earlier gated runs are summarized in evidence/live
 
 ## Links
 
-- Public repository: PENDING (repository name ai4-gate-nebius; URL added after the owner authorizes publishing)
-- Video (YouTube, public): PENDING (URL added after the owner authorizes upload)
-- Try it out link: PENDING. Recommended: the public repository URL, because the hosted preview needs a credential.
+- Public repository: https://github.com/TheSingulant/ai4-gate-nebius
+- Video (YouTube, public): PENDING (URL added after the upload is verified)
+- Try it out link: https://github.com/TheSingulant/ai4-gate-nebius (credential-free local demo; the hosted preview needs a credential).
 - Hosted demo URL and judge credential: PENDING, judges-only field only (see below). Never in Try it out, the description, the repository, or the video.
 
 License: Apache-2.0.
@@ -126,12 +126,12 @@ Do not put the hosted URL or any credential in the public Devpost page, the repo
 - [x] Uses an NVIDIA Nemotron model through Nebius Token Factory; usage highlighted in the README and here.
 - [x] Track selected: Coding and Agentic Engineering.
 - [x] Open source license detectable in the repository (Apache-2.0 LICENSE file) and a README with setup steps.
-- [ ] Public repository URL: PENDING owner authorization.
+- [x] Public repository URL: https://github.com/TheSingulant/ai4-gate-nebius
 - [x] Demo video under 3 minutes (about 1 minute 40 seconds), includes a screen capture of the project UI running, no third-party copyrighted music.
-- [ ] Video public on YouTube: PENDING owner authorization.
+- [ ] Video public on YouTube: PENDING verification.
 - [x] Feedback on Nebius Token Factory and NVIDIA models included.
 - [x] Project available free of charge for judging until the judging period ends (judge credential valid to 2026-12-16T08:00Z; local path needs no credential).
 - [ ] Testing instructions with credentials placed only in a judges-only field: PENDING, confirm the field in the live form.
 - [x] No claims of users, revenue, or production deployment. The reference authorizer is a prototype.
 
-This submission is NOT submitted. PENDING fields remain until the owner authorizes publishing the repository, uploading the video, and submitting on Devpost.
+PENDING fields are filled only after each resource is verified.

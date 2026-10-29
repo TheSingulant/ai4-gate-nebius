@@ -1,6 +1,6 @@
 # Receipt format: `gate-receipt/1` (hackathon edition)
 
-Every gate decision produces one JSON receipt signed with Ed25519. Anyone holding the signer's public key can check it offline with `verify.py`. A receipt proves which key signed which decision about which exact action, which planner produced it, and when. It does not prove that the tool ran, that it succeeded, or who the approver was.
+The gate produces one JSON receipt signed with Ed25519 for each execution-time decision (allowed or refused, including replay, tamper and missing-approval refusals) and for each outright policy denial at proposal time. A pending proposal that never executes and is not denied by policy does not generate a receipt, and an approval by itself is not a receipt. Anyone holding the signer's public key can check it offline with `verify.py`. A receipt proves which key signed which decision about which exact action, which planner produced it, and when. It does not prove that the tool ran, that it succeeded, or who the approver was.
 
 The verifier in `src/gate_verify` does not import the gate. Both sides implement canonical JSON for the same restricted value space (RFC 8785 for that subset): UTF-8, sorted keys, no insignificant whitespace, integers only inside plus or minus (2^53 - 1), no floats.
 
