@@ -1,0 +1,13 @@
+# Staging/production hardening overlay. Does not change the base compose alone.
+# Usage: docker compose -f docker-compose.yml -f docker-compose.harden.yml up -d --build
+services:
+  app:
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    tmpfs:
+      - /tmp:size=256m,mode=1777
+      - /run:size=16m,mode=755
+    # gate-data volume remains writable at /app/data (budget, sessions, signing keys)

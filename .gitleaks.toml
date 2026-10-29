@@ -1,0 +1,9 @@
+title = "AI4 Gate hackathon edition"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Fixed test sentinel. Not a credential."
+regexTarget = "line"
+regexes = ['''nf-test-sentinel-9f3a7c''']

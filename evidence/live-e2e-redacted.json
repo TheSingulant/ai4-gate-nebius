@@ -1,0 +1,1568 @@
+{
+ "note": "Redacted summary of real Nebius Token Factory runs through AI4 Gate. Response ids, prompts, and model text omitted; full evidence retained privately.",
+ "runs": [
+  {
+   "model": "nvidia/nemotron-3-super-120b-a12b",
+   "base_url": "https://api.tokenfactory.nebius.com/v1/",
+   "planner": "NEMOTRON-LIVE",
+   "started_at": "2026-10-28T19:07:37Z",
+   "finished_at": "2026-10-28T19:07:52Z",
+   "inference_calls": 11,
+   "prompt_tokens": 20123,
+   "completion_tokens": 1379,
+   "decisions": [
+    {
+     "tool": "read_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "receipt_id": "2ca0e503879b64a3543e8ea36ad6f982"
+    },
+    {
+     "tool": "read_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "receipt_id": "5ca6d08ac0495eae05cd9fc8122f0ea9"
+    },
+    {
+     "tool": "write_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "ecf0aab917538512c9b2ed84d4aecea08594df22290a1045229fe4d8eb8fd128",
+     "receipt_id": "f8b655a97a19087635d309cc19ea8839"
+    },
+    {
+     "tool": "read_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "receipt_id": "2a9c9260fdd3ed248083d98bb3d939c9"
+    },
+    {
+     "tool": "write_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "d99a8306fdba8d0095bac00f89b04394eaf9faeaff08d696dc005a6093afa491",
+     "receipt_id": "66b87c9d6e5914aeffc32a0bac5d689d"
+    },
+    {
+     "tool": "write_file",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "4e2e32080539691355a53e588a38d18eeb56dc722054cd69c036937197541641",
+     "receipt_id": "95c0405dc379dff065f0aef3d6b6b2bf"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "b2fe2383c298fdcd255583ef6bfc4ed9"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "c5591c70e9538c1c01dd2066ed110d35"
+    },
+    {
+     "tool": "git_commit",
+     "target": "git_commit",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "bc3a2d915e9edac4cbe8b6a19d56be470e59afd9a8d17154129663a48b8f7a39",
+     "receipt_id": "2971707335b1128669714c6db2879a3f"
+    },
+    {
+     "tool": "git_push",
+     "target": "origin/main",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "b805539f97a0f0f46ef8d3358ffa880f3f8979f87ae4840e57616af7b335977d",
+     "receipt_id": "35dbaf7f2ab871154526c574c23ce8f4"
+    }
+   ],
+   "receipts_verified": [
+    {
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:39Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "2ca0e503879b64a3543e8ea36ad6f982",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:40Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "5ca6d08ac0495eae05cd9fc8122f0ea9",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ecf0aab917538512c9b2ed84d4aecea08594df22290a1045229fe4d8eb8fd128",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:40Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "f8b655a97a19087635d309cc19ea8839",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:42Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "2a9c9260fdd3ed248083d98bb3d939c9",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "d99a8306fdba8d0095bac00f89b04394eaf9faeaff08d696dc005a6093afa491",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:43Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "66b87c9d6e5914aeffc32a0bac5d689d",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e2e32080539691355a53e588a38d18eeb56dc722054cd69c036937197541641",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:46Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "95c0405dc379dff065f0aef3d6b6b2bf",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:47Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "b2fe2383c298fdcd255583ef6bfc4ed9",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:47Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "c5591c70e9538c1c01dd2066ed110d35",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "bc3a2d915e9edac4cbe8b6a19d56be470e59afd9a8d17154129663a48b8f7a39",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:49Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "2971707335b1128669714c6db2879a3f",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "b805539f97a0f0f46ef8d3358ffa880f3f8979f87ae4840e57616af7b335977d",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:07:50Z",
+     "model_id": "nvidia/nemotron-3-super-120b-a12b",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "35dbaf7f2ab871154526c574c23ce8f4",
+     "verifier_errors": [],
+     "verifier_valid": true
+    }
+   ],
+   "replay": {
+    "status": "refused",
+    "reason": "ALREADY_CONSUMED",
+    "verifier_valid": true
+   },
+   "tamper": {
+    "status": "refused",
+    "reason": "ACTION_MISMATCH",
+    "verifier_valid": true
+   }
+  },
+  {
+   "model": "nvidia/Nemotron-3.5-Super-VL",
+   "base_url": "https://api.tokenfactory.nebius.com/v1/",
+   "planner": "NEMOTRON-LIVE",
+   "started_at": "2026-10-28T19:17:46Z",
+   "finished_at": "2026-10-28T19:17:56Z",
+   "inference_calls": 10,
+   "prompt_tokens": 16921,
+   "completion_tokens": 1131,
+   "decisions": [
+    {
+     "tool": "read_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "receipt_id": "1ac1467cef8b5164439346ba471f87e2"
+    },
+    {
+     "tool": "read_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "receipt_id": "a5efced67d3cff174a73047b1ec17143"
+    },
+    {
+     "tool": "write_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "ed73095782960b058a632327be24894241fc418ba6f47d6d7f3146bb95198cd2",
+     "receipt_id": "8b8ca158b17b388fe162b615e2638bb6"
+    },
+    {
+     "tool": "write_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "5bb09b7ab9a576f419265838f0c5ffcd3b6a0e11662bdb3e16db19dc123180e2",
+     "receipt_id": "2c78f6150546d6676f98c524378f63ce"
+    },
+    {
+     "tool": "write_file",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "a781bc25cd2d225acab8421fb8cc5e889957e633ab598ee6abaf1ec3060baa37",
+     "receipt_id": "057c0cf984de3417646e315831df6e51"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "f2f3370590fe770f468672bc9f822b07"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "5ed6e56dcaf0066ab6f02c881b7c9703"
+    },
+    {
+     "tool": "git_commit",
+     "target": "git_commit",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "3a246c4fbf2e987fd4b5fcbc3f6b28a8bd80109c109f1f6663cbb73fc8b82c33",
+     "receipt_id": "08868ff6269b70843c8b99a6216078fa"
+    },
+    {
+     "tool": "git_push",
+     "target": "origin/main",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "150495423f8fcf4548dee49b9bd82695ca28f09b4a07b91deac6df38bc5628ce",
+     "receipt_id": "d826c7c491f29874cf43c3650e20da3f"
+    }
+   ],
+   "receipts_verified": [
+    {
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:48Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "1ac1467cef8b5164439346ba471f87e2",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:49Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "a5efced67d3cff174a73047b1ec17143",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ed73095782960b058a632327be24894241fc418ba6f47d6d7f3146bb95198cd2",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:50Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "8b8ca158b17b388fe162b615e2638bb6",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "5bb09b7ab9a576f419265838f0c5ffcd3b6a0e11662bdb3e16db19dc123180e2",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:51Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "2c78f6150546d6676f98c524378f63ce",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "a781bc25cd2d225acab8421fb8cc5e889957e633ab598ee6abaf1ec3060baa37",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:52Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "057c0cf984de3417646e315831df6e51",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:52Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "f2f3370590fe770f468672bc9f822b07",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:53Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "5ed6e56dcaf0066ab6f02c881b7c9703",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "3a246c4fbf2e987fd4b5fcbc3f6b28a8bd80109c109f1f6663cbb73fc8b82c33",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:54Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "08868ff6269b70843c8b99a6216078fa",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "150495423f8fcf4548dee49b9bd82695ca28f09b4a07b91deac6df38bc5628ce",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:55Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "d826c7c491f29874cf43c3650e20da3f",
+     "verifier_errors": [],
+     "verifier_valid": true
+    }
+   ],
+   "replay": {
+    "status": "refused",
+    "reason": "ALREADY_CONSUMED",
+    "verifier_valid": true
+   },
+   "tamper": {
+    "status": "refused",
+    "reason": "ACTION_MISMATCH",
+    "verifier_valid": true
+   }
+  },
+  {
+   "model": "nvidia/Nemotron-3.5-Super-VL",
+   "base_url": "https://api.tokenfactory.nebius.com/v1/",
+   "planner": "NEMOTRON-LIVE",
+   "started_at": "2026-10-28T19:17:56Z",
+   "finished_at": "2026-10-28T19:18:06Z",
+   "inference_calls": 10,
+   "prompt_tokens": 16925,
+   "completion_tokens": 1134,
+   "decisions": [
+    {
+     "tool": "read_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "receipt_id": "ee2ffc11ab718d1d45aa56cf41c40827"
+    },
+    {
+     "tool": "read_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "receipt_id": "ee1144b4d98a93090b3a9d5b53af8ff1"
+    },
+    {
+     "tool": "write_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "ed73095782960b058a632327be24894241fc418ba6f47d6d7f3146bb95198cd2",
+     "receipt_id": "95a45488f5f256924cc4f20cc0df0b16"
+    },
+    {
+     "tool": "write_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "5bb09b7ab9a576f419265838f0c5ffcd3b6a0e11662bdb3e16db19dc123180e2",
+     "receipt_id": "47a75b612286177898312f3d48732b06"
+    },
+    {
+     "tool": "write_file",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "a781bc25cd2d225acab8421fb8cc5e889957e633ab598ee6abaf1ec3060baa37",
+     "receipt_id": "8e2706dd6ac75a305550368f9dc767cb"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "7d9c897b0880700aa084503fbfe18701"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "25c4d540f1745caf02defa7e46f327d1"
+    },
+    {
+     "tool": "git_commit",
+     "target": "git_commit",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "3a246c4fbf2e987fd4b5fcbc3f6b28a8bd80109c109f1f6663cbb73fc8b82c33",
+     "receipt_id": "04d03c6e47321b4b9f17168e1ab8e853"
+    },
+    {
+     "tool": "git_push",
+     "target": "origin/main",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "096b912e6c662ccb292b82a277fbdca740a4f3237941d5d5047e490733eb54f2",
+     "receipt_id": "ffe305e21a92757881926a6b3fd569fb"
+    }
+   ],
+   "receipts_verified": [
+    {
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:58Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "ee2ffc11ab718d1d45aa56cf41c40827",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:59Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "ee1144b4d98a93090b3a9d5b53af8ff1",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ed73095782960b058a632327be24894241fc418ba6f47d6d7f3146bb95198cd2",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:00Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "95a45488f5f256924cc4f20cc0df0b16",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "5bb09b7ab9a576f419265838f0c5ffcd3b6a0e11662bdb3e16db19dc123180e2",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:01Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "47a75b612286177898312f3d48732b06",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "a781bc25cd2d225acab8421fb8cc5e889957e633ab598ee6abaf1ec3060baa37",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:02Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "8e2706dd6ac75a305550368f9dc767cb",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:02Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "7d9c897b0880700aa084503fbfe18701",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:03Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "25c4d540f1745caf02defa7e46f327d1",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "3a246c4fbf2e987fd4b5fcbc3f6b28a8bd80109c109f1f6663cbb73fc8b82c33",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:04Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "04d03c6e47321b4b9f17168e1ab8e853",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "096b912e6c662ccb292b82a277fbdca740a4f3237941d5d5047e490733eb54f2",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:05Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "ffe305e21a92757881926a6b3fd569fb",
+     "verifier_errors": [],
+     "verifier_valid": true
+    }
+   ],
+   "replay": {
+    "status": "refused",
+    "reason": "ALREADY_CONSUMED",
+    "verifier_valid": true
+   },
+   "tamper": {
+    "status": "refused",
+    "reason": "ACTION_MISMATCH",
+    "verifier_valid": true
+   }
+  },
+  {
+   "model": "nvidia/Nemotron-3.5-Super-VL",
+   "base_url": "https://api.tokenfactory.nebius.com/v1/",
+   "planner": "NEMOTRON-LIVE",
+   "started_at": "2026-10-28T19:18:06Z",
+   "finished_at": "2026-10-28T19:18:18Z",
+   "inference_calls": 10,
+   "prompt_tokens": 16925,
+   "completion_tokens": 1171,
+   "decisions": [
+    {
+     "tool": "read_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "receipt_id": "98256b2bc8144f4f1551074300248cd4"
+    },
+    {
+     "tool": "read_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "receipt_id": "76cde1162013f70ce6262da66a5a91a4"
+    },
+    {
+     "tool": "write_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "ed73095782960b058a632327be24894241fc418ba6f47d6d7f3146bb95198cd2",
+     "receipt_id": "70333369be9eb2731cb4fc9f56e86e9f"
+    },
+    {
+     "tool": "write_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "5bb09b7ab9a576f419265838f0c5ffcd3b6a0e11662bdb3e16db19dc123180e2",
+     "receipt_id": "bbf0cd8aba8d09c4f6469ea562011070"
+    },
+    {
+     "tool": "write_file",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "a781bc25cd2d225acab8421fb8cc5e889957e633ab598ee6abaf1ec3060baa37",
+     "receipt_id": "ae6b8b31454e14999a433f15ef74565a"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "79f70479f36a007a436ab0b9906480c4"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "4d1a3436d88cc24122f02505fe7d57a1"
+    },
+    {
+     "tool": "git_commit",
+     "target": "git_commit",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "3a246c4fbf2e987fd4b5fcbc3f6b28a8bd80109c109f1f6663cbb73fc8b82c33",
+     "receipt_id": "ac8e5852fb3c43384b3638ca03601f89"
+    },
+    {
+     "tool": "git_push",
+     "target": "origin/main",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "4d337aeab031926786a1ca93d4282660e2fdbe16b9f68fd6ad32b1a8553af5f7",
+     "receipt_id": "b79c1396e71b7050ed639862907d4767"
+    }
+   ],
+   "receipts_verified": [
+    {
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:09Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "98256b2bc8144f4f1551074300248cd4",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:09Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "76cde1162013f70ce6262da66a5a91a4",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ed73095782960b058a632327be24894241fc418ba6f47d6d7f3146bb95198cd2",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:10Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "70333369be9eb2731cb4fc9f56e86e9f",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "5bb09b7ab9a576f419265838f0c5ffcd3b6a0e11662bdb3e16db19dc123180e2",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:11Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "bbf0cd8aba8d09c4f6469ea562011070",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "a781bc25cd2d225acab8421fb8cc5e889957e633ab598ee6abaf1ec3060baa37",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:12Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "ae6b8b31454e14999a433f15ef74565a",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:13Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "79f70479f36a007a436ab0b9906480c4",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:14Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "4d1a3436d88cc24122f02505fe7d57a1",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "3a246c4fbf2e987fd4b5fcbc3f6b28a8bd80109c109f1f6663cbb73fc8b82c33",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:15Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "ac8e5852fb3c43384b3638ca03601f89",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4d337aeab031926786a1ca93d4282660e2fdbe16b9f68fd6ad32b1a8553af5f7",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:18:16Z",
+     "model_id": "nvidia/Nemotron-3.5-Super-VL",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "b79c1396e71b7050ed639862907d4767",
+     "verifier_errors": [],
+     "verifier_valid": true
+    }
+   ],
+   "replay": {
+    "status": "refused",
+    "reason": "ALREADY_CONSUMED",
+    "verifier_valid": true
+   },
+   "tamper": {
+    "status": "refused",
+    "reason": "ACTION_MISMATCH",
+    "verifier_valid": true
+   }
+  },
+  {
+   "model": "nvidia/Nemotron-3_5-Lightning",
+   "base_url": "https://api.tokenfactory.nebius.com/v1/",
+   "planner": "NEMOTRON-LIVE",
+   "started_at": "2026-10-28T19:17:15Z",
+   "finished_at": "2026-10-28T19:17:24Z",
+   "inference_calls": 11,
+   "prompt_tokens": 22161,
+   "completion_tokens": 879,
+   "decisions": [
+    {
+     "tool": "read_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "receipt_id": "5ce0497ffe274892b9f6bb7f5e7c5438"
+    },
+    {
+     "tool": "read_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "receipt_id": "bb3ea8bf21225bd08c6bdf40a30117cd"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "82da0d0fb30f47c0917340fa66818c87"
+    },
+    {
+     "tool": "write_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "ecf0aab917538512c9b2ed84d4aecea08594df22290a1045229fe4d8eb8fd128",
+     "receipt_id": "8667407fd3f3606c962354c2debe2b7a"
+    },
+    {
+     "tool": "write_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "2708e3a23f2b3047d424645ba0271c72fe71410da6565407a6f162b10f478e9b",
+     "receipt_id": "addace3b4dad5de4aa7f5121b46b6d9c"
+    },
+    {
+     "tool": "write_file",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "5a8e530bfdf3d1ddb6f540f644697d80d00cdf52b792f1d1856e38ee2e127e33",
+     "receipt_id": "ac313a0e86cd6a0bd81fc648fc38c58b"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "f18c7c3c1d15bfd7dd799ebf4e5d5a9f"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "62a8e678983ad1bed3cb518172a7d057"
+    },
+    {
+     "tool": "git_commit",
+     "target": "git_commit",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "531a997eddea9857b97222669fadfa1dc6cf0b5f1045e211d86867848d418e77",
+     "receipt_id": "24c114756c5126903a4ff386e0e59892"
+    },
+    {
+     "tool": "git_push",
+     "target": "origin/main",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "b9cdcfd0ea474aa54d55351724e250d006f0b73807e51551f52cecc24aa6e8a4",
+     "receipt_id": "0d1952d4f9a852d3889a2e3cb82e0afb"
+    }
+   ],
+   "receipts_verified": [
+    {
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:17Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "5ce0497ffe274892b9f6bb7f5e7c5438",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:17Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "bb3ea8bf21225bd08c6bdf40a30117cd",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:18Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "82da0d0fb30f47c0917340fa66818c87",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ecf0aab917538512c9b2ed84d4aecea08594df22290a1045229fe4d8eb8fd128",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:18Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "8667407fd3f3606c962354c2debe2b7a",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "2708e3a23f2b3047d424645ba0271c72fe71410da6565407a6f162b10f478e9b",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:19Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "addace3b4dad5de4aa7f5121b46b6d9c",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "5a8e530bfdf3d1ddb6f540f644697d80d00cdf52b792f1d1856e38ee2e127e33",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:20Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "ac313a0e86cd6a0bd81fc648fc38c58b",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:21Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "f18c7c3c1d15bfd7dd799ebf4e5d5a9f",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:22Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "62a8e678983ad1bed3cb518172a7d057",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "531a997eddea9857b97222669fadfa1dc6cf0b5f1045e211d86867848d418e77",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:22Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "24c114756c5126903a4ff386e0e59892",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "b9cdcfd0ea474aa54d55351724e250d006f0b73807e51551f52cecc24aa6e8a4",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:23Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "0d1952d4f9a852d3889a2e3cb82e0afb",
+     "verifier_errors": [],
+     "verifier_valid": true
+    }
+   ],
+   "replay": {
+    "status": "refused",
+    "reason": "ALREADY_CONSUMED",
+    "verifier_valid": true
+   },
+   "tamper": {
+    "status": "refused",
+    "reason": "ACTION_MISMATCH",
+    "verifier_valid": true
+   }
+  },
+  {
+   "model": "nvidia/Nemotron-3_5-Lightning",
+   "base_url": "https://api.tokenfactory.nebius.com/v1/",
+   "planner": "NEMOTRON-LIVE",
+   "started_at": "2026-10-28T19:17:24Z",
+   "finished_at": "2026-10-28T19:17:35Z",
+   "inference_calls": 15,
+   "prompt_tokens": 32961,
+   "completion_tokens": 1031,
+   "decisions": [
+    {
+     "tool": "read_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "receipt_id": "120b5fb081a824e5fc73c42a8adad872"
+    },
+    {
+     "tool": "read_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "receipt_id": "7436592ea2818cb7250ef800069aab67"
+    },
+    {
+     "tool": "read_file",
+     "target": "scripts",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "bb278ff843048aef90a6b1c71a56b96af6de3c562966629244470228ac85c5d4",
+     "receipt_id": "202680ea394f94134f1c0c89226a7020"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "3328dc3e9c21d3a8b7b6ff8da1e0ab82"
+    },
+    {
+     "tool": "write_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "ecf0aab917538512c9b2ed84d4aecea08594df22290a1045229fe4d8eb8fd128",
+     "receipt_id": "3b249cb634c40cb52bcb27a7636d40b3"
+    },
+    {
+     "tool": "write_file",
+     "target": "tests/test_calc_regression.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "94ec5a3092e560734e9cfe6acc1824a5464d1205c15cfe41488fc0cd5f20bb22",
+     "receipt_id": "2d1027796fbeb62b95e6ef25edea73f7"
+    },
+    {
+     "tool": "mkdir",
+     "target": "scripts",
+     "decision": "invalid",
+     "reason": "unknown tool: 'mkdir'",
+     "action_hash": null,
+     "receipt_id": null
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "c3a35fa5c9cd73ed79e174c5b44add22"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "d54b3534b894f42170a3c0c671cfaa7c"
+    },
+    {
+     "tool": "write_file",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "43f2b2beda79b59f47d9d63d57ec62c032cb94f32179e793bf9ae6f8e758042e",
+     "receipt_id": "d9bf05c86f0111f75a251b940943bf8a"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "82140b72e3f06a3dedc92be98ecd9948"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "8804b3fe6b888658ea66eb8d4ea5366d"
+    },
+    {
+     "tool": "git_commit",
+     "target": "git_commit",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "78328fe527c7cf73254f8f8571bedf68b10aadc5c4269bb219b9d61d6b0ccd95",
+     "receipt_id": "287fd9e3a80bd13b3473f05e9d7aa894"
+    },
+    {
+     "tool": "git_push",
+     "target": "origin/main",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "9841d5548522d832f3131961e5762023c15e2b9e844c36452f0e6c0686b0e16d",
+     "receipt_id": "cbe0b51bdb53f2aa9b01218ed30f0f13"
+    }
+   ],
+   "receipts_verified": [
+    {
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:26Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "120b5fb081a824e5fc73c42a8adad872",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:26Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "7436592ea2818cb7250ef800069aab67",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "bb278ff843048aef90a6b1c71a56b96af6de3c562966629244470228ac85c5d4",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:27Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "202680ea394f94134f1c0c89226a7020",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:27Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "3328dc3e9c21d3a8b7b6ff8da1e0ab82",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ecf0aab917538512c9b2ed84d4aecea08594df22290a1045229fe4d8eb8fd128",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:29Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "3b249cb634c40cb52bcb27a7636d40b3",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "94ec5a3092e560734e9cfe6acc1824a5464d1205c15cfe41488fc0cd5f20bb22",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:30Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "2d1027796fbeb62b95e6ef25edea73f7",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:31Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "c3a35fa5c9cd73ed79e174c5b44add22",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:31Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "d54b3534b894f42170a3c0c671cfaa7c",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "43f2b2beda79b59f47d9d63d57ec62c032cb94f32179e793bf9ae6f8e758042e",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:32Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "d9bf05c86f0111f75a251b940943bf8a",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:33Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "82140b72e3f06a3dedc92be98ecd9948",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:33Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "8804b3fe6b888658ea66eb8d4ea5366d",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "78328fe527c7cf73254f8f8571bedf68b10aadc5c4269bb219b9d61d6b0ccd95",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:34Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "287fd9e3a80bd13b3473f05e9d7aa894",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "9841d5548522d832f3131961e5762023c15e2b9e844c36452f0e6c0686b0e16d",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:34Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "cbe0b51bdb53f2aa9b01218ed30f0f13",
+     "verifier_errors": [],
+     "verifier_valid": true
+    }
+   ],
+   "replay": {
+    "status": "refused",
+    "reason": "ALREADY_CONSUMED",
+    "verifier_valid": true
+   },
+   "tamper": {
+    "status": "refused",
+    "reason": "ACTION_MISMATCH",
+    "verifier_valid": true
+   }
+  },
+  {
+   "model": "nvidia/Nemotron-3_5-Lightning",
+   "base_url": "https://api.tokenfactory.nebius.com/v1/",
+   "planner": "NEMOTRON-LIVE",
+   "started_at": "2026-10-28T19:17:36Z",
+   "finished_at": "2026-10-28T19:17:46Z",
+   "inference_calls": 14,
+   "prompt_tokens": 29930,
+   "completion_tokens": 953,
+   "decisions": [
+    {
+     "tool": "read_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "receipt_id": "749f5d313c803edc21d68dc45bf4dd50"
+    },
+    {
+     "tool": "read_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "receipt_id": "c1a44ec244c81ff723cf8391beaf54e2"
+    },
+    {
+     "tool": "read_file",
+     "target": "scripts",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "bb278ff843048aef90a6b1c71a56b96af6de3c562966629244470228ac85c5d4",
+     "receipt_id": "c9050f6e48702efbbb9abb08673e9ebd"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "91d7624ba344f2a45a0eef50f832b24b"
+    },
+    {
+     "tool": "write_file",
+     "target": "src/calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "ecf0aab917538512c9b2ed84d4aecea08594df22290a1045229fe4d8eb8fd128",
+     "receipt_id": "356ac504d305aadba7682d4a65b9b2f5"
+    },
+    {
+     "tool": "write_file",
+     "target": "tests/test_calc.py",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "793f510a460e0fa05f187f4b33ab46f34994a7884fc7bbe38af4966f82b0d1da",
+     "receipt_id": "0902677d3e3b6f07a13ea271b7efa5c5"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "290492b911cc51b4dbd4839ad6176c6e"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "d11086d5a2eab5bcd3fcdc74e27a6bef"
+    },
+    {
+     "tool": "write_file",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "16d7c931786343f9184f8d9263d78d1b9e9ece1b9d1625b84045724a44bdf6e6",
+     "receipt_id": "d2b6bbe76d8f429d2dadd458a4c3cdd3"
+    },
+    {
+     "tool": "run_python",
+     "target": "scripts/smoke.py",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "receipt_id": "fe6b41a1f9cad94fce3762f0591cab50"
+    },
+    {
+     "tool": "run_tests",
+     "target": "run_tests",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "receipt_id": "b0597c99b82320168c8cc17c4aaf9ef3"
+    },
+    {
+     "tool": "git_commit",
+     "target": "git_commit",
+     "decision": "auto_allow",
+     "reason": "POLICY_ALLOW",
+     "action_hash": "00f87787c5a9bad67f03daa5ed444d4e332c6e16cacafe5394a05d25ab67fc8b",
+     "receipt_id": "f3d88d207c4e528c3ed97163eb0ebc03"
+    },
+    {
+     "tool": "git_push",
+     "target": "origin/main",
+     "decision": "needs_approval",
+     "reason": "APPROVED",
+     "action_hash": "fd4d252cb9ae510d3409b404d479137de3becec3269f95a3ce4a37837c8605d4",
+     "receipt_id": "7bbb1fefb419069b1cef030fb7fa38c9"
+    }
+   ],
+   "receipts_verified": [
+    {
+     "action_hash": "2175a174ee60daa520cc82327c57fe9115eca03e214cb5a4fda83497c41a30fb",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:37Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "749f5d313c803edc21d68dc45bf4dd50",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "b3b56c13d8af5b0b0b03bc3ed3561eccfcd0b9f1ed3a8cf12b25169265f608fc",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:38Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "c1a44ec244c81ff723cf8391beaf54e2",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "bb278ff843048aef90a6b1c71a56b96af6de3c562966629244470228ac85c5d4",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:38Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "c9050f6e48702efbbb9abb08673e9ebd",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:39Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "91d7624ba344f2a45a0eef50f832b24b",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ecf0aab917538512c9b2ed84d4aecea08594df22290a1045229fe4d8eb8fd128",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:40Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "356ac504d305aadba7682d4a65b9b2f5",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "793f510a460e0fa05f187f4b33ab46f34994a7884fc7bbe38af4966f82b0d1da",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:41Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "0902677d3e3b6f07a13ea271b7efa5c5",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:41Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "290492b911cc51b4dbd4839ad6176c6e",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:42Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "d11086d5a2eab5bcd3fcdc74e27a6bef",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "16d7c931786343f9184f8d9263d78d1b9e9ece1b9d1625b84045724a44bdf6e6",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:43Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "d2b6bbe76d8f429d2dadd458a4c3cdd3",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "ece83225c9c1a2bb1f1a660ae6d55bdfca3e363f444e183f78286574c105d931",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:43Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "fe6b41a1f9cad94fce3762f0591cab50",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "4e206cf44bb8b851c80cc9cea3ec6a579ff510da123294b9a081ce16ddaa87d8",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:44Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "b0597c99b82320168c8cc17c4aaf9ef3",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "00f87787c5a9bad67f03daa5ed444d4e332c6e16cacafe5394a05d25ab67fc8b",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:45Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "POLICY_ALLOW",
+     "receipt_id": "f3d88d207c4e528c3ed97163eb0ebc03",
+     "verifier_errors": [],
+     "verifier_valid": true
+    },
+    {
+     "action_hash": "fd4d252cb9ae510d3409b404d479137de3becec3269f95a3ce4a37837c8605d4",
+     "decision": "allowed",
+     "issued_at": "2026-10-28T19:17:45Z",
+     "model_id": "nvidia/Nemotron-3_5-Lightning",
+     "planner": "NEMOTRON-LIVE",
+     "reason": "APPROVED",
+     "receipt_id": "7bbb1fefb419069b1cef030fb7fa38c9",
+     "verifier_errors": [],
+     "verifier_valid": true
+    }
+   ],
+   "replay": {
+    "status": "refused",
+    "reason": "ALREADY_CONSUMED",
+    "verifier_valid": true
+   },
+   "tamper": {
+    "status": "refused",
+    "reason": "ACTION_MISMATCH",
+    "verifier_valid": true
+   }
+  }
+ ]
+}

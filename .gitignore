@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+demo-output/
+data/
+*.sqlite3
+*.sqlite
+.env
+
+# Raw live evidence stays off the branch. The redacted summary is evidence/live-e2e-redacted.json.
+evidence/live-e2e.json
+evidence/models/
+.env

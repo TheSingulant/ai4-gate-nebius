@@ -1,0 +1,9 @@
+AI4 Gate, Nebius hackathon edition
+Copyright 2026 The Singulant L.L.C-FZ
+
+This directory is a prototype for the Nebius x NVIDIA Global AI Hackathon.
+It contains an open reference authorization engine.
+It does not contain a client for the hosted AI4 authority service.
+
+NVIDIA, Nemotron, and Nebius are trademarks of their owners.
+This project is an independent prototype and is not an official Nebius or NVIDIA product.

@@ -1,0 +1,5 @@
+# SITE_ADDRESS is a DNS name for automatic HTTPS, or :80 for HTTP only.
+{$SITE_ADDRESS} {
+	encode gzip
+	reverse_proxy app:8000
+}

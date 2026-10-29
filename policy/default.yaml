@@ -1,0 +1,41 @@
+# Default gate policy. First matching rule wins; anything unmatched is denied.
+version: 1
+default: deny
+rules:
+  - tool: read_file
+    decision: allow
+  - tool: run_tests
+    decision: allow
+  - tool: write_file
+    target: "src/*"
+    decision: allow
+  - tool: write_file
+    target: "tests/*"
+    decision: allow
+  - tool: write_file
+    decision: needs_approval
+    reason: writes outside src/ and tests/ need a person
+  - tool: run_python
+    target: "scripts/*"
+    decision: needs_approval
+    reason: running new code needs a person
+  - tool: run_python
+    decision: deny
+    reason: only scripts/ may be run
+  - tool: git_commit
+    decision: allow
+  - tool: git_push
+    target: origin/main
+    decision: needs_approval
+    reason: pushing to main needs a person
+  - tool: git_push
+    decision: deny
+    reason: only origin/main may be pushed
+  - tool: send_message
+    args:
+      to: team@example.test
+    decision: needs_approval
+    reason: messages need a person
+  - tool: send_message
+    decision: deny
+    reason: messages may only go to team@example.test
